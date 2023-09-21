@@ -1,2 +1,31 @@
-package PACKAGE_NAME;public class Mix4 {
+public class Mix4 {
+    int counter=0;
+
+
+    public static void main(String[] args){
+        int[] c= new int[7];
+        c[0]=2;
+        c[1]=3;
+        int count=0;
+        Mix4[] mixes= new Mix4[20];
+        int i=0;
+        while(i<19){
+            mixes[i]=new Mix4();
+            mixes[i].counter=mixes[i].counter +1;
+            count=count+1;
+            count=count+mixes[i].maybeNew(i);
+            i+=1;
+
+        }
+        System.out.println(count+" "+mixes[1].counter);
+    }
+    public int maybeNew(int index){
+        if(index<6){
+            Mix4 mix = new Mix4();
+            mix.counter=mix.counter+1;
+            return 1;
+        }
+        return 0;
+    }
+
 }
