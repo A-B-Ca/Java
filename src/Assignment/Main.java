@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         char esc='y';
+        System.out.println("Hello World");
         Scanner scan=new Scanner(System.in);
         System.out.println("Welcome to CALCULATOR");
         Addition a1= new Addition();
