@@ -1,4 +1,4 @@
-package Assignment;
+package AssignmentCalculator;
 
 public class Calculator {
     public void sum(double a, double b){

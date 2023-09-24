@@ -1,39 +1,38 @@
-package Assignment;
-
+package AssignmentCalculator;
 import java.util.Scanner;
 
-public class Division {
+public class Addition {
     char esc;
     Scanner scan = new Scanner(System.in);
-    Calculator c4 = new Calculator();
+    Calculator c1 = new Calculator();
     double a;
     double b;
     double c;
 
-    public void div() {
-        System.out.println("Division ");
+    public void add() {
+        System.out.println("Addition ");
         do {
-            System.out.println("Do you want to divide  2 or 3 numbers");
+            System.out.println("Do you want to add 2 or 3 nummbers");
             int inp = scan.nextInt();
             if (inp == 2) {
                 System.out.println("Enter the first number");
-                a = scan.nextDouble();
+                double a = scan.nextDouble();
                 System.out.println("Enter the second number");
-                b = scan.nextDouble();
-                c4.div(a, b);
+                double b = scan.nextDouble();
+                c1.sum(a, b);
             } else if (inp==3) {
                 System.out.println("Enter the first number");
-                a = scan.nextDouble();
+                double a = scan.nextDouble();
                 System.out.println("Enter the second number");
-                b = scan.nextDouble();
+                double b = scan.nextDouble();
                 System.out.println("Enter the third number");
-                c = scan.nextDouble();
-                c4.div(a,b,c);
+                double c = scan.nextDouble();
+                c1.sum(a,b,c);
             }
             else{
                 System.out.println("Enter a valid input");
             }
-            System.out.println("Do you want to continue dividing more numbers");
+            System.out.println("Do you want to continue adding more numbers");
             System.out.println("Press y to continue n to go back to main menu");
             esc=scan.next().charAt(0);
 
