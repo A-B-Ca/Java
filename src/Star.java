@@ -11,7 +11,7 @@ public class Star {
             }
 
         }
-        System.out.println("Enter a number");
+        //System.out.println("Enter a number");
         Scanner scan=new Scanner(System.in);
         int inp= scan.nextInt();
         String x= (inp%2==0)? "Even":"Odd";
