@@ -4,7 +4,13 @@ import java.util.Scanner;
 public class BankApp {
 
 
+
     public static void main(String[] args){
+
+
+
+
+
         Scanner scan= new Scanner(System.in);
         Account accnt1= new Account(1000,101, "Asher");
         Account accnt2= new Account(1000,102,"Muza");

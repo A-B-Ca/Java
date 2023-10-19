@@ -1,4 +1,4 @@
-package Assignments;
+package assignments;
 import java.util.Scanner;
 
 public class Cube {

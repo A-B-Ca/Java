@@ -1,4 +1,4 @@
-package AssignmentCalculator;
+package assignment_calculator;
 import java.util.Scanner;
 
 public class Addition {
