@@ -1,6 +1,6 @@
 package assignments.interfce;
 
-public interface Climbable {
+interface Climbable {
     void climb();
     void swing();
 }

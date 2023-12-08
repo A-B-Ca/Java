@@ -2,6 +2,8 @@ package octoberClass;
 
 public class BankMain {
     public static void main(String[] args) {
+        Hotel h= Hotel.DOUBLE;
+        System.out.println(h.price);
         Bank sb= new ScotiaBank();
         System.out.println("Loan Rate: "+sb.rate());
         System.out.println("Dep rate: "+sb.depRate());

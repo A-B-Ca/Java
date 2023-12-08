@@ -1,4 +1,5 @@
 package assignment_calculator;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -11,10 +12,16 @@ public class Main {
         Multiplication m1= new Multiplication();
         Division d1= new Division();
         Modulus l1=new Modulus();
-
+        int op=0;
         do{
             System.out.println("Please select the operation \n Enter 1 for addition \n Enter 2 for subtraction \n Enter 3 for multiplication \n Enter 4 for Division \n Enter 5 for Modulus ");
-            int op = scan.nextInt();
+            try {
+                op = scan.nextInt();
+            }
+            catch (InputMismatchException ime){
+                System.out.println("Enter a valid choice");
+
+            }
             switch(op){
                 case 1:
                     a1.add();

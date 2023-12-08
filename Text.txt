@@ -1,0 +1,26 @@
+First Line
+red
+blue
+majentha
+darkbrown
+cyan
+violet
+gray
+green 
+ 
+halogen
+orange
+
+
+
+"Docker"
+
+"KUBernetes"
+
+Rabbit MQ
+
+https://www.docker.com/
+https://kubernetes.io/
+
+prometheus
+AWS LAMBDA

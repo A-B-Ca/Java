@@ -2,6 +2,8 @@ package octoberClass;
 
 public class Computer {
     int ram;
+
+
     String processor;
     Computer(){
         ram=8;

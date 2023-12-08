@@ -2,6 +2,19 @@ package assignments.interfce;
 
 public class Jaguar extends Lion implements Climbable {
 
+    Climbable c = new Climbable() {
+        @Override
+        public void climb() {
+
+        }
+
+        @Override
+        public void swing() {
+
+        }
+    };
+
+
     @Override
     public void climb() {
         System.out.println("Climbing trees");
@@ -9,6 +22,6 @@ public class Jaguar extends Lion implements Climbable {
 
     @Override
     public void swing() {
-        System.out.println("Occassionally jumps from tree to hunt down its prey");
+        System.out.println("Occasionally jumps from tree to hunt down its prey");
     }
 }

@@ -36,21 +36,24 @@ public class ScotiaBank extends Bank{
         return accntBal;
     }
 
-    public void withdraw(){
+    public void withdraw() {
         System.out.println("Enter the amount you want to withdraw");
-        double inp2= scan.nextDouble();
-        if(inp2>0 && inp2<=accntBal){
-            accntBal=accntBal-inp2;
-            System.out.println("Withdraw Successful, your current account balance is: "+accntBal);
+        double inp2 = scan.nextDouble();
+        try {
+            if (inp2 > 0 && inp2 <= accntBal) {
+                accntBal = accntBal - inp2;
+                System.out.println("Withdraw Successful, your current account balance is: " + accntBal);
+
+            } else if (inp2 > accntBal) {
+                throw new InsufficientFundException("You have insufficient funds");
+                //System.out.println("You have insufficient balance");
+            } else {
+                System.out.println("Enter a valid input");
+            }
+        } catch (InsufficientFundException ife) {
+            System.out.println(ife);
 
         }
-        else if(inp2>accntBal){
-            System.out.println("You have insufficient balance");
-        }
-        else{
-            System.out.println("Enter a valid input");
-        }
-
     }
     public void makeDep(){
         System.out.println("Enter the deposit amount");
